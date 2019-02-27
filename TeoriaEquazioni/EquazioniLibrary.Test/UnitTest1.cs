@@ -11,7 +11,7 @@ namespace EquazioniLibrary.Test
         public void TestMethod1()
         {
             double a = 3;
-            bool asp = false;
+            bool asp = true;
             bool ott = Equazioni.IsDetermined(a);
 
             Assert.AreEqual(asp, ott);
@@ -21,7 +21,7 @@ namespace EquazioniLibrary.Test
         public void TestMethod2()
         {
             double a = -3;
-            bool asp = false;
+            bool asp = true;
             bool ott = Equazioni.IsDetermined(a);
 
             Assert.AreEqual(asp, ott);
@@ -53,7 +53,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0;
             double b = 5;
-            bool asp = true;
+            bool asp = false;
             bool ott = Equazioni.IsInconsisted(a, b);
 
             Assert.AreEqual(asp, ott);
@@ -75,7 +75,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 0;
             double b = 0;
-            bool asp = false;
+            bool asp = true;
             bool ott = Equazioni.IsInconsisted(a, b);
 
             Assert.AreEqual(asp, ott);
@@ -84,7 +84,7 @@ namespace EquazioniLibrary.Test
         public void TestSec()
         {
             double a = 6;
-            bool asp = false;
+            bool asp = true;
             bool ott = Equazioni.IsDegree2(a);
 
             Assert.AreEqual(asp, ott);
